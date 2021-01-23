@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='Style.css') }}">
+    <script src="{{url_for('static', filename='script.js')}}"></script>
+    <title>Predict selling price</title>
+  <p style="color:white;">{{prediction_selling_price}}</p>
+</head>
+<body>
+<form action="{{url_for('predict')}}" method ="post" class='form'>
+  <div class="wrapper">
+    <div class="title">
+      Predict Selling Price
+    </div>
+  </div>
+  <p class='field required'>
+    <label class='label required' for='name'>Stall no.</label>
+    <input class='text-input' id='name' name='Stall_no' required type='number'>
+  </p>
+  <p class='field required'>
+    <label class='label' for='email'>Market Category (Choose between 0 - 471)</label>
+    <input class='text-input' id='email' name='Market_Category' required type='number'min ="0" max="471"/>
+  </p>
+  <p class='field required'>
+    <label class='label' for='login'>Discount available</label>
+    <select class='text-input' id='login' name="Discount_avail" required>
+              <option value="">----</option>
+              <option value="0">No</option>
+              <option value="1">Yes</option>
+    </select>
+   <!-- <input class='text-input' id='login' name='Discount_avail' type='number' min="0" required type='text'>-->
+  </p>
+  <p class='field required'>
+    <label class='label' for='password'>Charges Type 1</label>
+    <input class='text-input' id='password' name='Charges_1' required type='number' min="0">
+  </p>
+   <p class='field required'>
+    <label class='label required' for='name'>Minimum Price</label>
+    <input class='text-input' id='Minimum_price' name='Minimum_price' required type='number' min="0">
+  </p>
+   <p class='field required'>
+    <label class='label required' for='name1'>Maximum Price</label>
+    <input class='text-input' id='name1' name='Maximum_price' required type='number' min="0">
+  </p>
+  <div class='field'>
+    <label class='label'>Product Category</label>
+    <ul class='options'>
+      <li class='option' >
+        <input class='option-input' id='option-0' name='option' type='radio' value='0' required>
+        <label class='option-label' for='option-0'>Child Care</label>
+      </li>
+      <li class='option'>
+        <input class='option-input' id='option-1' name='option' type='radio' value='1'>
+        <label class='option-label' for='option-1'>Cosmetics</label>
+      </li>
+      <li class='option'>
+        <input class='option-input' id='option-2' name='option' type='radio' value='2'>
+        <label class='option-label' for='option-2'>Educational</label>
+      </li>
+      <li class='option'>
+        <input class='option-input' id='option-3' name='option' type='radio' value='3'>
+        <label class='option-label' for='option-3'>Fashion</label>
+      </li>
+      <li class='option'>
+        <input class='option-input' id='option-4' name='option' type='radio' value='4'>
+        <label class='option-label' for='option-4'>Home Decor</label>
+      </li>
+      <li class='option'>
+        <input class='option-input' id='option-5' name='option' type='radio' value='5'>
+        <label class='option-label' for='option-5'>Hospitality</label>
+      </li>
+      <li class='option'>
+        <input class='option-input' id='option-6' name='option' type='radio' value='6'>
+        <label class='option-label' for='option-6'>Organic</label>
+      </li>
+      <li class='option'>
+        <input class='option-input' id='option-7' name='option' type='radio' value='7'>
+        <label class='option-label' for='option-7'>Pet Care</label>
+      </li>
+      <li class='option'>
+        <input class='option-input' id='option-8' name='option' type='radio' value='8'>
+        <label class='option-label' for='option-8'>Repair</label>
+      </li>
+      <li class='option'>
+        <input class='option-input' id='option-9' name='option' type='radio' value='9'>
+        <label class='option-label' for='option-9'>Technology</label>
+      </li>
+    </ul>
+  </div>
+  <div class='field'>
+    <label class='label'>Grade</label>
+    <ul class='options'>
+      <li class='option'>
+        <input class='option-input' id='option1-10' name='Grade' type='radio' value='0' required>
+        <label class='option-label' for='option1-10'>0</label>
+      </li>
+      <li class='option'>
+        <input class='option-input' id='option1-11' name='Grade' type='radio' value='1'>
+        <label class='option-label' for='option1-11'>1</label>
+      </li>
+      <li class='option'>
+        <input class='option-input' id='option1-12' name='Grade' type='radio' value='2'>
+        <label class='option-label' for='option1-12'>2</label>
+      </li>
+      <li class='option'>
+        <input class='option-input' id='option1-13' name='Grade' type='radio' value='3'>
+        <label class='option-label' for='option1-13'>3</label>
+      </li>
+    </ul>
+  </div>
+  <p class='field half'>
+    <input class='button' type='submit' value='Predict'>
+  </p>
+
+</form>
+
+
+</body>
+</html>
