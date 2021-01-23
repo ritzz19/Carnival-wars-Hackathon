@@ -13,11 +13,16 @@ def predict():
     if request.method == 'POST':
         Stall_no=float(request.form['Stall_no'])
         Market_Category=int(request.form['Market_Category'])
-        Discount_avail = float(request.form['Discount_avail'])
         Charges_1=request.form['Charges_1']
         Minimum_price = request.form['Minimum_price']
         Maximum_price = request.form['Maximum_price']
         Grade= request.form['Grade']
+        Discount_avail = request.form['Discount_avail']
+        if (Discount_avail == 'No'):
+            Discount_avail = 0
+        elif (Discount_avail == 'Yes'):
+            Discount_avail = 1
+
         if(Grade==0):
             Grade=0
         elif(Grade==1):
@@ -26,6 +31,7 @@ def predict():
             Grade = 2
         elif (Grade==3):
             Grade = 3
+
         Product_Category = request.form['option']
         Product_Category_Child_care = 0
         Product_Category_Cosmetics = 0
