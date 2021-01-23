@@ -1,7 +1,7 @@
 # Carnival-wars-Hackathon
 
 It was a hackathon conducted by HackerEarth. Our main motto was to predict the selling price for different products.
-Secured rank in the top 5% of the percentage of the leaderboard. 
+Secured rank in the top 5% of the leaderboard. 
 
 Link to the hackathon:
 https://www.hackerearth.com/challenges/competitive/hackerearth-machine-learning-challenge-predict-selling-price/
