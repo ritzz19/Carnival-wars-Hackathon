@@ -19,6 +19,7 @@ For data analysis, I have used Tableau to get a better insight into the training
 4. Product category has increased with respect to quarter and the year.
 5. Loyal customer tends to purchase more.
 6. Market category 23,24,58,452 and 358 has the highest number of the selling price.
+
 7.Grade '0' tends to have the most number of selling price and Grade '1' has the least number of the selling price.
 
 ![2021-01-23_15-43-51](https://user-images.githubusercontent.com/30840805/105609646-b5d2bd80-5dd0-11eb-9d32-25fd6562e1ff.png)
@@ -26,7 +27,7 @@ For data analysis, I have used Tableau to get a better insight into the training
 # Modeling: (Carnival-Hackathon.ipynb file)
 I have used python for further data analysis and modeling. Data cleaning applied:
 1. To remove the outlier in minimum and selling price features.
-2. Used correlation and ANOVA test to decide which feature to drop
+2. Used correlation and ANOVA test to decide which feature to drop.
 3. For modeling RandomForest Regressor gave the best result. 
 4. Used hyperparameter tuning to get a more optimized result. I was able to get 99.87% RMSLE for training data and 91.37% RMSLE in test data.
 
