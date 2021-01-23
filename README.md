@@ -7,10 +7,12 @@ Link to the hackathon:
 https://www.hackerearth.com/challenges/competitive/hackerearth-machine-learning-challenge-predict-selling-price/
 
 Rank: https://www.hackerearth.com/challenges/competitive/hackerearth-machine-learning-challenge-predict-selling-price/leaderboard/predict-the-price-5-fe7f8735/page/2/
+
 (91/2144)
 
 # Analysis:
 Tableau link: https://public.tableau.com/profile/swati.thapa#!/vizhome/Carnival-hackathon/Analysis
+
 For data analysis I have used Tableau to get better insight of the training data provided. Following were the observations: 
 1. Selling price has negative values.
 2. Technology has the highest number of charges.
